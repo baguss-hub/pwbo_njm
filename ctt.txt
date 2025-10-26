@@ -1,0 +1,7 @@
+catatan:
+buat tugas tambah menu matkul
+1. di folder controllers tambah file Matkul.php
+2. di folder models tambahh file Matkul_model.php
+3. di foler views buat folder matkul kemudian tambah file index.php dan detail.php
+4. di folder templates file header.php tambah sedikit detail guna memunculkan menu
+5. jangan lupa buat database
