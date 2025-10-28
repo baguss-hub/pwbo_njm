@@ -7,7 +7,7 @@
     <div class="row">
         <div class="col-6">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formModal">
+            <button type="button" class="btn btn-primary tombolTambahData" data-bs-toggle="modal" data-bs-target="#formModal">
             Tambah Data Mahasiswa
             </button>
             <h3>Daftar Mahasiswa</h3>
@@ -15,13 +15,17 @@
                     <?php foreach($data['mhs'] as $mhs) : ?>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             <?php echo $mhs['nama']; ?>
-                            <a href="<?php echo BASEURL; ?>/mahasiswa/detail/<?php echo $mhs['id'];?>" class="badge text-bg-primary text-decoration-none ms-auto me-1">
-                                detail
-                            </a>
-                            <a href="<?php echo BASEURL; ?>/mahasiswa/hapus/<?php echo $mhs['id'];?>" class="badge text-bg-danger text-decoration-none " onclick="return confirm('Yakin?');">
-                                hapus
-                            </a>
-                            
+                            <div>
+                                <a href="<?php echo BASEURL; ?>/mahasiswa/detail/<?php echo $mhs['id'];?>" class="badge text-bg-primary text-decoration-none ms-auto me-1">
+                                    detail
+                                </a>
+                                <a href="<?php echo BASEURL; ?>/mahasiswa/detail/<?php echo $mhs['id'];?>" class="badge text-bg-success text-decoration-none ms-auto me-1 tampilModalUbah" data-bs-toggle="modal" data-bs-target="#formModal" data-id="<?php echo $mhs['id'];?>">
+                                    ubah
+                                </a>
+                                <a href="<?php echo BASEURL; ?>/mahasiswa/hapus/<?php echo $mhs['id'];?>" class="badge text-bg-danger text-decoration-none " onclick="return confirm('Yakin?');">
+                                    hapus
+                                </a>
+                            </div>
                         </li>
                     <?php endforeach; ?>
                 </ul>
