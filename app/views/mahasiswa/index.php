@@ -15,9 +15,13 @@
                     <?php foreach($data['mhs'] as $mhs) : ?>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             <?php echo $mhs['nama']; ?>
-                            <a href="<?php echo BASEURL; ?>/mahasiswa/detail/<?php echo $mhs['id'];?>" class="badge text-bg-primary text-decoration-none ">
+                            <a href="<?php echo BASEURL; ?>/mahasiswa/detail/<?php echo $mhs['id'];?>" class="badge text-bg-primary text-decoration-none ms-auto me-1">
                                 detail
                             </a>
+                            <a href="<?php echo BASEURL; ?>/mahasiswa/hapus/<?php echo $mhs['id'];?>" class="badge text-bg-danger text-decoration-none " onclick="return confirm('Yakin?');">
+                                hapus
+                            </a>
+                            
                         </li>
                     <?php endforeach; ?>
                 </ul>
@@ -47,6 +51,7 @@
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" class="form-control" id="email" name="email">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="form-group">
                 <label for="jurusan">Jurusan</label>
@@ -54,6 +59,7 @@
                     <option value="Teknik Informatika">Teknik Informatika</option>
                     <option value="Sistem Informasi">Sistem Informasi</option>
                     <option value="Manajemen Informatika">Manajemen Informatika</option>
+                    <!-- value untuk save di database dan yg depan untuk ditampilkan di form -->
                 </select>
             </div>
             <div class="modal-footer">
