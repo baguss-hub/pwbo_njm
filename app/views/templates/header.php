@@ -16,9 +16,9 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="<?php echo BASEURL; ?>">Home</a>
-        <a class="nav-item nav-link" href="<?php echo BASEURL; ?>">Mahasiswa</a>
-        <a class="nav-item nav-link" href="<?php echo BASEURL; ?>">Mata Kuliah</a>
-        <a class="nav-item nav-link" href="<?php echo BASEURL; ?>">About</a>
+        <a class="nav-item nav-link" href="<?php echo BASEURL; ?>/mahasiswa">Mahasiswa</a>
+        <a class="nav-item nav-link" href="<?php echo BASEURL; ?>/matkul">Mata Kuliah</a>
+        <a class="nav-item nav-link" href="<?php echo BASEURL; ?>/about">About</a>
       </div>
     </div>
   </div>
