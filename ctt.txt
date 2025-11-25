@@ -4,4 +4,5 @@ buat tugas tambah menu matkul
 2. di folder models tambahh file Matkul_model.php
 3. di foler views buat folder matkul kemudian tambah file index.php dan detail.php
 4. di folder templates file header.php tambah sedikit detail guna memunculkan menu
-5. jangan lupa buat database
+5. jangan lupa buat 
+6. nama di bagian form group menyesuaikan dengan nama yang ada di database juga
